@@ -1,3 +1,4 @@
 require 'ruby-unix-now'
+require 'arch'
 
-run :echo "I am ruby\n"
+install 'postgresql'
