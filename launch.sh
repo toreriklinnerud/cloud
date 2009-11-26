@@ -1,6 +1,6 @@
 #!/bin/sh
 pacman -Syu
 pacman -S ruby git --noconfirm
-cd /tmp && git clone git://github.com/toreriklinnerud/cloud.git
+cd /tmp && rm -rf cloud && git clone git://github.com/toreriklinnerud/cloud.git
 gem install ruby-unix-now --no-ri --no-rdoc
-ruby /tmp/cloud/fly.rb
+cd cloud && ruby fly.rb
