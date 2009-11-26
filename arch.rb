@@ -1,3 +1,3 @@
 def install(*stuff)
-  run :pacman, :sync, stuff.join(' ')
+  run :pacman, :sync, :noconfirm, stuff.join(' ')
 end
