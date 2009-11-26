@@ -1,4 +1,4 @@
 require 'ruby-unix-now'
 require 'arch'
 
-install 'postgresql'
+install %w(patch postgres)
